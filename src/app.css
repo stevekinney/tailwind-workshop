@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	pre {
+		@apply text-gray-100;
+	}
+
+	a {
+		@apply text-purple-800 decoration-black decoration-2 underline-offset-4 hover:text-purple-700 hover:underline;
+	}
+}
