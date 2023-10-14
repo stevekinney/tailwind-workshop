@@ -44,6 +44,10 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"shiki": "^0.14.5"
+		"@fontsource-variable/fira-code": "^5.0.13",
+		"@fontsource-variable/nunito-sans": "^5.0.9",
+		"@fontsource/libre-barcode-128-text": "^5.0.15",
+		"shiki": "^0.14.5",
+		"tailwind-merge": "^1.14.0"
 	}
 }

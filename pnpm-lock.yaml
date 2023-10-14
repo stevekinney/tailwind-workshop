@@ -5,9 +5,21 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource-variable/fira-code':
+    specifier: ^5.0.13
+    version: 5.0.13
+  '@fontsource-variable/nunito-sans':
+    specifier: ^5.0.9
+    version: 5.0.9
+  '@fontsource/libre-barcode-128-text':
+    specifier: ^5.0.15
+    version: 5.0.15
   shiki:
     specifier: ^0.14.5
     version: 0.14.5
+  tailwind-merge:
+    specifier: ^1.14.0
+    version: 1.14.0
 
 devDependencies:
   '@jsdevtools/rehype-toc':
@@ -345,6 +357,18 @@ packages:
     resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
     engines: {node: '>=14'}
     dev: true
+
+  /@fontsource-variable/fira-code@5.0.13:
+    resolution: {integrity: sha512-dzmEk2tuvUcz/pcf9vhSir8K8G7fIdmJA7E5t1MTD/2s0vjbBDVCqYr4gC84L8c/XzmwtXg56GhY6rcl91JFRA==}
+    dev: false
+
+  /@fontsource-variable/nunito-sans@5.0.9:
+    resolution: {integrity: sha512-mZzT9D6qQ2hwHSj8a2oexSh0a66YWQH40J7dP4BVljf6tqksVCGcErdVBllSSYs4c/SKh/n9J87kueX/Z9uLEA==}
+    dev: false
+
+  /@fontsource/libre-barcode-128-text@5.0.15:
+    resolution: {integrity: sha512-oHeZKRKPatUyUahDvJwaepe1qXlEVRQeapQJPkb18iiRj7DqCeC/o3BXFlKXLUX5SCbyLoKAOvb16iMpCn2Yqg==}
+    dev: false
 
   /@humanwhocodes/config-array@0.11.11:
     resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}
@@ -2482,6 +2506,10 @@ packages:
       magic-string: 0.30.5
       periscopic: 3.1.0
     dev: true
+
+  /tailwind-merge@1.14.0:
+    resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
+    dev: false
 
   /tailwindcss@3.3.3:
     resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}

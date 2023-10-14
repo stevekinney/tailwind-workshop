@@ -1,6 +1,7 @@
 ---
-title: variants
+title: Variants
 ---
+# Variants
 
 In Tailwind CSS, variants are utility classes that apply their styles conditionally based on the state of an element. Variants are essentially prefixed versions of existing utility classes. This feature is especially useful for defining behaviors like hover, focus, or responsive designs. Here's an overview:
 

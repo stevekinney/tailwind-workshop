@@ -1,1 +1,1 @@
-export const title = 'Tailwind Workshop';
+export const title = 'Tailwind: A Workshop';

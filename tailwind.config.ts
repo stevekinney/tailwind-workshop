@@ -4,7 +4,10 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
+				title: ['"Libre Barcode 128 Text"', 'cursive'],
+				mono: ['Fira Code', 'monospace'],
 				sans: [
+					'Nunito Sans Variable',
 					'ui-sans-serif',
 					'system-ui',
 					'-apple-system',

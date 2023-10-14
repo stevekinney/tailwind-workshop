@@ -1,3 +1,7 @@
+@import '@fontsource/libre-barcode-128-text';
+@import '@fontsource-variable/nunito-sans';
+@import '@fontsource-variable/fira-code';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
