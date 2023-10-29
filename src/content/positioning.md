@@ -4,11 +4,15 @@ title: Positioning
 
 # Positioning
 
+<script>
+	import { Callout } from '$components';
+</script>
+
 Here's a more comprehensive overview of the different positioning types available in CSS, with a focus on how to implement them using Tailwind CSS:
 
-## Overview
-
-Certainly, let's explore these positioning concepts conceptually:
+<Callout title="Additional Positioning Settings">
+	Tailwind CSS doesn't offer built-in utility classes for <code>static</code>, <code>inherit</code>, <code>initial</code>, or <code>unset</code> positioning.
+</Callout>
 
 ## Sticky Positioning
 
@@ -149,5 +153,3 @@ For `unset`:
 	position: unset;
 }
 ```
-
-While Tailwind CSS doesn't offer built-in utility classes for `static`, `inherit`, `initial`, or `unset` positioning.

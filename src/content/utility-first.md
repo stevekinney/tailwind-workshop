@@ -2,9 +2,32 @@
 title: Utility-First CSS
 ---
 
+<script>
+  import Playground from '$components/playground.svelte';
+</script>
+
 # Utility-First CSS
 
 Utility-first CSS is a methodology for writing CSS that prioritizes the use of utility classes to construct a user interface. Unlike traditional CSS approaches, where you define styles for semantic classes or IDs, utility-first CSS focuses on applying low-level utility classes directly to HTML elements. These utility classes are small, single-purpose classes that do one thing well, such as setting the margin, padding, text alignment, or color.
+
+In Tailwind, that's going to look something like this:
+
+```html
+<div class="p-8">
+	<button class="rounded border-2 border-blue-600 bg-blue-500 px-4 py-2 font-bold text-white">
+		A Very Important Button
+	</button>
+</div>
+```
+
+<Playground id="cNn6Gp5WZS" title="A Simple Button with Utilities" />
+
+We'll get into what all of these little utility classes are in a little bit. You can see an example of our button [here](https://play.tailwindcss.com/cNn6Gp5WZS).
+
+## Further Reading
+
+- [By The Numbers: A Year and Half with Atomic CSS](https://johnpolacek.medium.com/by-the-numbers-a-year-and-half-with-atomic-css-39d75b1263b4)
+- [No, Utility Classes Aren't the Same As Inline Styles](https://frontstuff.io/no-utility-classes-arent-the-same-as-inline-styles)
 
 ## Advantages of Utility-First CSS
 
@@ -22,8 +45,6 @@ Utility-first CSS is a methodology for writing CSS that prioritizes the use of u
 
 ## Popular Utility-First Frameworks
 
-1. **Tailwind CSS**: One of the most popular utility-first frameworks, it provides a wide range of utilities for everything from layouts to theming.
-2. **Tachyons**: Another utility-first framework focused on creating fast-loading, highly readable, and highly maintainable code.
-3. **Basscss**: A lightweight collection of base utility classes that are easy to extend.
-
-Utility-first CSS may not be suitable for every project, but it offers a different paradigm that many find efficient and effective for building modern web interfaces.
+1. [**Tailwind CSS**](https://tailwindcss.com/docs/utility-first): One of the most popular utility-first frameworks, it provides a wide range of utilities for everything from layouts to theming.
+2. [**Tachyons**](https://tachyons.io/): Another utility-first framework focused on creating fast-loading, highly readable, and highly maintainable code.
+3. [**Basscss**:](https://basscss.com/) A lightweight collection of base utility classes that are easy to extend.

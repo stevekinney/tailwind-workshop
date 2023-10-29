@@ -22,5 +22,3 @@ In Tailwind CSS, the `peer` modifier is designed to style an element based on th
 - **Sibling Requirement**: Both the peer and the element being styled have to be siblings in the DOM. This might limit how you structure your HTML.
 - **Specificity**: Like the `group` modifier, using the `peer` modifier also increases specificity, so it might be harder to override styles.
 - **Debugging**: Understanding which elements are peers and which styles are being applied conditionally can add a layer of complexity to your debugging process.
-
-In summary, the `peer` modifier offers a way to conditionally style elements based on the state of their sibling elements. It’s great for form elements and interactive UI components but comes with its own challenges around HTML structure, specificity, and debugging.

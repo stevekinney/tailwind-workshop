@@ -1,42 +1,39 @@
 ---
-title: Variants
+title: Sytling Pseudo-Classes with Variants
 ---
-# Variants
 
-In Tailwind CSS, variants are utility classes that apply their styles conditionally based on the state of an element. Variants are essentially prefixed versions of existing utility classes. This feature is especially useful for defining behaviors like hover, focus, or responsive designs. Here's an overview:
+# Styling Pseudo-Classes with Variants
 
-## Standard Variants
+<script lang="ts">
+  import { Example } from '$components';
+</script>
 
-- **Hover**: Use the `hover:` prefix to apply a utility class when an element is hovered over. For example, `hover:bg-blue-500` changes the background color to blue when hovered.
-- **Focus**: Use the `focus:` prefix to apply styles when an element is focused. For example, `focus:border-yellow-300` applies a yellow border on focus.
-- **Active**: Apply styles when an element is active, using the `active:` prefix.
+In Tailwind CSS, variants are utility classes that apply their styles conditionally based on the state of an element. Variants are essentially prefixed versions of existing utility classes. This feature is especially useful for defining behaviors like hover, focus, or responsive designs.
 
-## Stateful Variants
+Let's consider a variation on our button from earlier.
 
-- **Disabled**: Use the `disabled:` prefix to style disabled elements.
-- **Visited**: The `visited:` prefix styles links that have been visited.
+<Example>
+  <button class="bg-blue-500 border-2 border-blue-600 text-white px-2 py-1 rounded shadow-md">Button</button>
+</Example>
 
-## Responsive Variants
+But, we're used to buttons having some level of interaction to them. For example, they typically might change as you hover or click on them.
 
-- **Breakpoints**: Tailwind has built-in breakpoints (`sm`, `md`, `lg`, `xl`, `2xl`) that you can use to apply styles at different screen sizes. For example, `sm:text-base lg:text-xl` changes the text size based on the screen size.
+We can use variants in Tailwind to add effects on hover or active or focused or required or disabled or other pseudo-classes that I can't think of at the moment.
 
-## [[group-modifier|Group]] Variants
+Let's add the ability to change the background color when we **hover** over the element.
 
-- **Group Hover**: The `group-hover:` prefix targets a child element when its parent has a `.group` class and is hovered over.
-- **Group Focus**: Similar to `group-hover`, but applies when the parent is focused.
+<Example highlight="hover:bg-blue-400">
+  <button class="bg-blue-500 border-2 border-blue-600 text-white px-2 py-1 rounded shadow-md hover:bg-blue-400">Button</button>
+</Example>
 
-## Dark Mode
+We can do something similar for the **active** state as well.
 
-- **Dark**: The `dark:` variant applies styles when dark mode is active.
+<Example highlight="active:bg-blue-600 active:border-blue-700">
+  <button class="bg-blue-500 border-2 border-blue-600 text-white px-2 py-1 rounded shadow-md hover:bg-blue-400 active:bg-blue-600 active:border-blue-700">Button</button>
+</Example>
 
-## When to Use
+We call also change the styling when the button is disabled.
 
-- When you want to change the style of an element based on its state or interaction (hover, focus, etc.).
-- When you want to apply different styles at different screen sizes.
-
-## Trade-Offs
-
-- **Increased Complexity**: While variants make styling interactive states easier, they can also make the HTML more verbose, as you're essentially embedding style logic directly into the markup.
-- **Customization Required**: For some advanced states or conditions, Tailwind’s built-in variants might not suffice, requiring custom variants or direct CSS.
-
-Overall, variants are a cornerstone feature in Tailwind's utility-first philosophy, allowing you to create highly interactive and responsive UIs directly from your HTML markup. Would you like to know more about any specific type of variant?
+<Example highlight="disabled:opacity-50">
+  <button disabled class="bg-blue-500 border-2 border-blue-600 text-white px-2 py-1 rounded shadow-md hover:bg-blue-400 active:bg-blue-600 active:border-blue-700 disabled:opacity-50">Button</button>
+</Example>

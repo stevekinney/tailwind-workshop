@@ -4,11 +4,7 @@ title: Flex
 
 # Flex
 
-Absolutely, Flexbox is a layout model in CSS that's designed to distribute space along a single axis, either horizontally or vertically. It's incredibly useful for building complex layout structures with a more predictable way than traditional models, especially when the sizes of your items are unknown or dynamic.
-
-## Using Flexbox with Tailwind CSS
-
-With Tailwind, you can easily apply Flexbox styles using utility classes. Here's how:
+Flexbox is a layout model in CSS that's designed to distribute space along a single axis, either horizontally or vertically. It's incredibly useful for building complex layout structures with a more predictable way than traditional models, especially when the sizes of your items are unknown or dynamic.
 
 ## Enabling Flexbox
 
@@ -49,15 +45,15 @@ With Tailwind, you can easily apply Flexbox styles using utility classes. Here's
 
 ## Further Reading
 
-- **[[flex-container]]**: Understand the parent-child relationship.
-- **[[main-axis-and-cross-axis]]**: The two axes along which flex items are laid out.
-- **[[justify-content]]**: Main-axis alignment.
-- **[[align-items-and-align-self]]**: Cross-axis alignment and their overrides.
-- **[[flex-wrap]]**: Behavior when flex items exceed the container's size.
-- **[[flex-grow-and-shrink]]**: The mechanism to fill available space or reduce items to fit.
-- **[[flex-basis]]**: The initial size of a flex item before growing and shrinking.
-- **[[flex-direction]]**: Specifies the direction in which Flex Items are laid out in the Flex Container. By default, items are laid out in a row, but you can also set them to be in a column.
-- **[[flex-ordering]]**: Tailwind allows you to control the order in which Flex Items appear within the Flex Container, overriding their natural order in the HTML.
-- **[[flex-spacing]]**: While we discussed alignment and distribution, Tailwind also provides utility classes for managing the spacing (gutters) between Flex Items.
-- **[[nested-flexbox]]**: Flex Containers can also be Flex Items if they are nested within another Flex Container, opening up more complex layout possibilities.
-- **[[auto-margins]]**: Tailwind allows you to use auto-margins for alignment, which can be especially helpful for distributing space within a Flex Container.
+- **`flex-container`**: Understand the parent-child relationship.
+- **`main-axis-and-cross-axis`**: The two axes along which flex items are laid out.
+- **`justify-content`**: Main-axis alignment.
+- **`align-items-and-align-self`**: Cross-axis alignment and their overrides.
+- **`flex-wrap`**: Behavior when flex items exceed the container's size.
+- **`flex-grow-and-shrink`**: The mechanism to fill available space or reduce items to fit.
+- **`flex-basis`**: The initial size of a flex item before growing and shrinking.
+- **`flex-direction`**: Specifies the direction in which Flex Items are laid out in the Flex Container. By default, items are laid out in a row, but you can also set them to be in a column.
+- **`flex-ordering`**: Tailwind allows you to control the order in which Flex Items appear within the Flex Container, overriding their natural order in the HTML.
+- **`flex-spacing`**: While we discussed alignment and distribution, Tailwind also provides utility classes for managing the spacing (gutters) between Flex Items.
+- **`nested-flexbox`**: Flex Containers can also be Flex Items if they are nested within another Flex Container, opening up more complex layout possibilities.
+- **`auto-margins`**: Tailwind allows you to use auto-margins for alignment, which can be especially helpful for distributing space within a Flex Container.

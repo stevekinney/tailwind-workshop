@@ -22,15 +22,15 @@ Both `space` and `divide` utilities in Tailwind CSS are used for managing the sp
 3. **Direction**: Adding a `space-x-*` or `space-y-*` class to a container will add horizontal or vertical spacing between its direct children, depending on the axis you specify.
 4. **Manual Control**: It provides a more "manual" way of managing the layout since you control the margin on each child element.
 
-   Example:
+Example:
 
-   ```html
-   <div class="space-x-4">
-   	<div>Child 1</div>
-   	<div>Child 2</div>
-   	<div>Child 3</div>
-   </div>
-   ```
+```html
+<div class="space-x-4">
+	<div>Child 1</div>
+	<div>Child 2</div>
+	<div>Child 3</div>
+</div>
+```
 
 ## `divide`
 
@@ -39,14 +39,12 @@ Both `space` and `divide` utilities in Tailwind CSS are used for managing the sp
 3. **Flex/Grid Compatibility**: It is often used in conjunction with `flex` and `grid` classes to add dividers between flex or grid items.
 4. **CSS Borders**: Since it works by adding borders, you can control the color and style of these dividers, which is not possible with `space`.
 
-   Example:
+Example:
 
-   ```html
-   <div class="divide-x-2 divide-gray-300">
-   	<div>Child 1</div>
-   	<div>Child 2</div>
-   	<div>Child 3</div>
-   </div>
-   ```
-
-In summary, use `space` when you want to add margins between child elements and use `divide` when you're looking to add divider lines between them. Both utilities are powerful and help to achieve clean layouts without writing custom CSS.
+```html
+<div class="divide-x-2 divide-gray-300">
+	<div>Child 1</div>
+	<div>Child 2</div>
+	<div>Child 3</div>
+</div>
+```

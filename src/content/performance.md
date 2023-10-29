@@ -4,7 +4,7 @@ title: Performance
 
 # Performance
 
-Performance considerations are essential for any front-end framework, and Tailwind CSS is no exception. Here are some points to consider:
+Performance is hard and weirdly specific to a particular code base, but here are some hand-wavy things to think about.
 
 ## File Size
 

@@ -1,9 +1,14 @@
 {
-	"attachmentFolderPath": "static/images",
-	"useMarkdownLinks": true,
-	"newLinkFormat": "relative",
-	"newFileLocation": "folder",
-	"newFileFolderPath": "src/content",
-	"userIgnoreFilters": ["node_modules/", "src/routes/", "src/lib/", "tests/"],
-	"alwaysUpdateLinks": true
+  "attachmentFolderPath": "static/images",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "src/content",
+  "userIgnoreFilters": [
+    "node_modules/",
+    "src/routes/",
+    "src/lib/",
+    "tests/"
+  ],
+  "alwaysUpdateLinks": true
 }

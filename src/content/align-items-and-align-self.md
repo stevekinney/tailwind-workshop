@@ -6,7 +6,7 @@ title: Align Items and Align Self
 
 The properties `align-items` and `align-self` in Flexbox control the alignment of Flex Items along the cross-axis of the Flex Container. In Tailwind CSS, these functionalities are mapped to utility classes for ease of use.
 
-## Align Items (`align-items`)
+## Align Items (a.k.a. `align-items`)
 
 - **What it Does**: The `align-items` property aligns all Flex Items along the cross-axis inside the Flex Container. The alignment is applied to all items as a group.
 - **How to Use in Tailwind**: Tailwind provides a variety of classes to set the `align-items` property, such as `items-start`, `items-center`, `items-end`, `items-baseline`, and `items-stretch`.

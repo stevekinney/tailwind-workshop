@@ -1,19 +1,23 @@
 import { error } from '@sveltejs/kit';
-import contents from '../contents.yaml';
+import workspace from 'virtual:workspace';
 
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params }) => {
-	try {
-		const content = await import(`../../content/${params.slug}.md`);
+	const { slug } = params;
+	const filename = `${slug}.md`;
+	const filePath = workspace(`src/content/${filename}`);
 
-		return {
-			contents,
-			content: content.default,
-			metadata: content.metadata,
-			slug: params.slug
-		};
-	} catch (e) {
-		throw error(404, `Could not find ${params.slug}.`);
+	const content = await import(`../../content/${slug}.md`);
+
+	if (!content || !content.default) {
+		throw error(404, `Could not find content file: ${filename}`);
 	}
+
+	return {
+		content: content.default,
+		metadata: content.metadata,
+		slug,
+		filePath
+	};
 };

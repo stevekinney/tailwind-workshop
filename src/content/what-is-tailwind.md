@@ -4,9 +4,9 @@ title: What is Tailwind and Why Would I Use It?
 
 # What is Tailwind and Why Would I Use It?
 
-## What is Tailwind CSS
+## What is [Tailwind CSS](https://tailwindcss.com)?
 
-Tailwind's core idea is to give developers more freedom by providing utility classes—short CSS snippets for specific styling like background color, margins, and fonts. Instead of offering generic, hard-to-modify components, Tailwind encourages developers to create unique designs directly in their HTML markup.
+Tailwind's core idea is to give developers more freedom by providing [utility classes](/utility-first)—short CSS snippets for specific styling like background color, margins, and fonts. Instead of offering generic, hard-to-modify components, Tailwind encourages developers to create unique designs directly in their HTML markup.
 
 ## Key Features in Architecture
 

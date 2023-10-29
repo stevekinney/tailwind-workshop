@@ -4,6 +4,8 @@ title: The @layer Directive
 
 # The @layer Directive
 
+[Tailwind uses the idea of layers](./tailwind-layers.md), but they're not Tailwind-specific.
+
 The `@layer` CSS at-rule is used to declare a cascade layer, allowing web developers to have more control over the CSS cascade and the order of precedence among multiple cascade layers. Here's a summarized explanation of its key features:
 
 ## Syntax
@@ -30,3 +32,5 @@ The `@layer` CSS at-rule is used to declare a cascade layer, allowing web develo
 5. **Nesting**: `@layer framework { @layer layout { } }`
 
 This feature enables more straightforward CSS organization, better control over specificity, and ease of maintaining large codebases.
+
+If you want, you can read a bit more about Tailwind's layers [here](./tailwind-layers.md).
