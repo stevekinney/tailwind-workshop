@@ -24,6 +24,7 @@
 		"@playwright/test": "^1.39.0",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.27.1",
+		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/typography": "^0.5.10",
 		"@typescript-eslint/eslint-plugin": "^6.9.0",
 		"@typescript-eslint/parser": "^6.9.0",
@@ -50,7 +51,10 @@
 		"@fontsource-variable/fira-code": "^5.0.15",
 		"@fontsource-variable/nunito-sans": "^5.0.9",
 		"@fontsource/libre-barcode-128-text": "^5.0.17",
+		"clsx": "^2.0.0",
+		"just-throttle": "^4.2.0",
 		"shiki": "^0.14.5",
+		"sveltekit-search-params": "^1.0.15",
 		"tailwind-merge": "^1.14.0"
 	}
 }

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	label {
+		@apply block whitespace-nowrap font-semibold;
+	}
+
+	input {
+		@apply block rounded-md border-2 border-fuchsia-400 bg-fuchsia-200 px-1 px-2 text-fuchsia-950 caret-fuchsia-500 shadow-md focus:bg-fuchsia-500/20 focus:outline-none;
+	}
+
+	input[type='range'] {
+		@apply accent-fuchsia-400 shadow-none;
+	}
+
+	select:has(option:checked[value='']) {
+		@apply text-fuchsia-500;
+	}
+
+	select:has(option:checked:not([value=''])) {
+		@apply bg-yellow-200;
+	}
+}
