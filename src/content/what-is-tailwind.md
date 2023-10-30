@@ -16,6 +16,6 @@ Tailwind's core idea is to give developers more freedom by providing [utility cl
 - **Plugin Architecture**: Extensibility is a major plus, with plugins letting you add custom utilities and design variants.
 - **Just-In-Time (JIT) Mode**: This newer feature generates utility classes on-the-fly, improving build performance and allowing for more dynamic styling options like hover and focus states.
 
-## Advantages and Trade-offs
+## Advantages and Trade Offs and Other Things to Consider
 
 While Tailwind greatly enhances customization and increases developer speed, it does come with a learning curve and the risk of cluttered HTML files. However, most find the advantages outweigh these challenges.

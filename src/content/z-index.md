@@ -10,7 +10,7 @@ In the context of Tailwind CSS, the `z-index` property is used to control the st
 
 - **Concept**: The stacking context is an imaginary three-dimensional space in which elements reside. A higher `z-index` value means an element will be closer to the viewer, overlaying those with lower values.
 - **Use-case**: Use `z-index` when you want to control which elements overlay others. This is often relevant for modals, tooltips, dropdowns, and floating buttons.
-- **Trade-offs**: It can get complex in larger projects where many elements have defined z-indices. If not managed well, this can lead to unintended overlaps or elements appearing beneath others.
+- **Trade Offs and Other Things to Consider**: It can get complex in larger projects where many elements have defined z-indices. If not managed well, this can lead to unintended overlaps or elements appearing beneath others.
 
 ## Using Tailwind for Z-Index
 

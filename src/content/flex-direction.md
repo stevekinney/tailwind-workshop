@@ -18,7 +18,7 @@ In Tailwind CSS, Flex Direction is used to set the direction in which flex items
 - **Column Direction**: Ideal for stacking items vertically, like cards, list items, or any other content where a top-to-bottom flow is appropriate.
 - **Column Reverse Direction**: Useful for altering the visual stacking order of elements without changing their order in the markup, similar to `flex-row-reverse` but in a vertical orientation.
 
-## Trade-Offs
+## Trade Offs and Other Things to Consider
 
 1. **DOM Order vs Visual Order**: When you reverse the direction, the visual order changes but the DOM order remains the same, which could be confusing for screen reader users.
 2. **Flex Properties**: Properties like `justify-content` and `align-items` work along the main axis and cross axis, which are determined by the flex direction. Changing the direction may require adjusting these properties.

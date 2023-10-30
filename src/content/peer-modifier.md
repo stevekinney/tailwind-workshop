@@ -6,7 +6,7 @@ title: Peer Modifier
 
 In Tailwind CSS, the `peer` modifier is designed to style an element based on the state of a "sibling" element. This makes it particularly useful for creating user interfaces where the appearance of an element should change based on user interactions with another element on the same DOM level.
 
-## Conceptual Overview
+## At a High Level
 
 - **Peering**: You apply the `peer` class to an element that you want to "watch" for state changes like `focus`, `hover`, etc.
 - **Conditional Styling**: On the sibling element you wish to style, you can use classes like `peer-hover:`, `peer-focus:`, etc., to apply styles when the "peer" element has a particular state.
@@ -17,7 +17,7 @@ In Tailwind CSS, the `peer` modifier is designed to style an element based on th
 - **Interactive Components**: Similar to the `group` modifier but more localized. For example, you might have a button next to a piece of text, and you want the text to change when the button is hovered over.
 - **Custom Checkboxes/Radio Buttons**: You can use the `peer` modifier to style a custom checkbox or radio button based on whether the actual (and possibly hidden) HTML input is checked.
 
-## Trade-offs
+## Trade Offs and Other Things to Consider
 
 - **Sibling Requirement**: Both the peer and the element being styled have to be siblings in the DOM. This might limit how you structure your HTML.
 - **Specificity**: Like the `group` modifier, using the `peer` modifier also increases specificity, so it might be harder to override styles.

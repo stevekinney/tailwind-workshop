@@ -44,7 +44,7 @@ Example in Tailwind:
 </div>
 ```
 
-## Trade-Offs
+## Trade Offs and Other Things to Consider
 
 - **Flex Grow**: By allowing an item to grow, you may end up with unevenly sized items if not managed correctly. It's also possible to lose control over an item's width.
 - **Flex Shrink**: Allowing an item to shrink may make the content inside it unreadable or cause layout issues. You lose a certain amount of control over the item's size when it's allowed to shrink.

@@ -18,51 +18,51 @@ Here's a more comprehensive overview of the different positioning types availabl
 
 - **Concept**: Elements stick to a certain position within their parent container as the user scrolls.
 - **Use-case**: This is useful for elements like headers or navigation menus that should stay visible as the user scrolls down.
-- **Trade-offs**: Compatibility can be an issue on older browsers. Also, parent container dimensions can limit the effectiveness of `sticky`.
+- **Trade Offs and Other Things to Consider**: Compatibility can be an issue on older browsers. Also, parent container dimensions can limit the effectiveness of `sticky`.
 
 ## Fixed Positioning
 
 - **Concept**: Elements are removed from the normal document flow and are positioned relative to the viewport.
 - **Use-case**: Great for elements that should always be visible, such as persistent headers or floating action buttons.
-- **Trade-offs**: Because it's removed from the normal document flow, it can overlay other elements and cause layout issues.
+- **Trade Offs and Other Things to Consider**: Because it's removed from the normal document flow, it can overlay other elements and cause layout issues.
 
 ## Absolute Positioning
 
 - **Concept**: Elements are positioned relative to the nearest positioned ancestor (which has `relative`, `absolute`, `fixed`, or `sticky` positioning). If there isn't one, it uses the document body.
 - **Use-case**: Useful for positioning elements within a container, like tooltips or dropdown menus.
-- **Trade-offs**: It removes the element from the document flow, which means it won't take up space and can cause overlapping issues.
+- **Trade Offs and Other Things to Consider**: It removes the element from the document flow, which means it won't take up space and can cause overlapping issues.
 
 ## Relative Positioning
 
 - **Concept**: Elements are positioned relative to their normal position in the document flow.
 - **Use-case**: This is often used as a positioning context for absolutely positioned child elements. It can also be used to nudge elements from their normal position without affecting the layout.
-- **Trade-offs**: Other elements in the layout are not aware of the 'nudged' position, which can cause overlapping.
+- **Trade Offs and Other Things to Consider**: Other elements in the layout are not aware of the 'nudged' position, which can cause overlapping.
 
 ## Static Positioning
 
 - **Concept**: This is the default positioning; elements are positioned in their natural place in the document.
 - **Use-case**: You'll usually stick with this for most elements unless you need special positioning.
-- **Trade-offs**: None, as this is the standard document flow.
+- **Trade Offs and Other Things to Consider**: None, as this is the standard document flow.
 
 ## Inherit Positioning
 
 - **Concept**: Elements inherit the `position` property from their parent.
 - **Use-case**: When you want to keep the positioning consistent among parent and child elements.
-- **Trade-offs**: It can be confusing and make the code harder to maintain if the parent's positioning changes.
+- **Trade Offs and Other Things to Consider**: It can be confusing and make the code harder to maintain if the parent's positioning changes.
 
 ## Initial Positioning
 
 - **Concept**: This sets the position property back to its default value, which is `static`.
 - **Use-case**: To reset to default positioning.
-- **Trade-offs**: Overrides any positioning that may have been applied earlier, which may or may not be what you want.
+- **Trade Offs and Other Things to Consider**: Overrides any positioning that may have been applied earlier, which may or may not be what you want.
 
 ## Unset Positioning
 
 - **Concept**: It resets the property to its natural value, either inherited or initial.
 - **Use-case**: Useful when you want to undo any specific positioning that's been previously set.
-- **Trade-offs**: Like `inherit`, it can cause confusion and maintenance issues if not managed carefully.
+- **Trade Offs and Other Things to Consider**: Like `inherit`, it can cause confusion and maintenance issues if not managed carefully.
 
-Understanding these positioning concepts and their trade-offs can help you make better decisions when structuring your web layouts.
+Understanding these positioning concepts and their Trade Offs and Other Things to Consider can help you make better decisions when structuring your web layouts.
 
 ## In Practice
 

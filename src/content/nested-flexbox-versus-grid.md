@@ -21,7 +21,7 @@ Choosing between nested Flexbox and CSS Grid often depends on the specific layou
 3. **Fixed and Fractional Units**: Grid provides a robust way of creating layouts using fixed, fractional, and flexible units, making it easier to create complex and responsive designs.
 4. **Template Areas**: CSS Grid offers the `grid-template-areas` property, which can make managing layouts easier and more semantic.
 
-## Trade-offs
+## Trade Offs and Other Things to Consider
 
 1. **Learning Curve**: While Flexbox is often considered simpler for one-dimensional layouts, Grid is generally more versatile but has a steeper learning curve.
 2. **Overhead**: Using nested Flexbox or Grid can increase HTML and CSS complexity, potentially making it harder to maintain.

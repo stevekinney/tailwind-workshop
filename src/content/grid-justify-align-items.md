@@ -25,6 +25,6 @@ In the context of Tailwind CSS, you can control the alignment and justification 
 - `justify-items-*`: Use these utilities when you want to control how individual grid items align within their grid cells along the main axis (row or column, depending on your grid orientation).
 - `items-*`: Use these utilities when you want to control how individual grid items align within their grid cells along the cross axis (opposite of the main axis).
 
-## Trade-offs
+## Trade Offs and Other Things to Consider
 
 - These utilities set the alignment for all grid items in the grid container, making them less flexible if you want to apply different alignments to different items. In such cases, you would use `justify-self` and `align-self` utilities for more specific item-level control.

@@ -29,6 +29,6 @@ In Tailwind CSS, you can control the alignment and justification of grid items a
 - Use `justify-*` utilities to control the distribution of items along the main axis, which could be either rows or columns.
 - Use `content-*` utilities to control the distribution of grid rows or columns along the cross axis.
 
-## Trade-offs
+## Trade Offs and Other Things to Consider
 
 - When you specify these utilities, you're controlling the layout at the container level, which means that all items within the container will be affected. If you need more granular control over individual items, you would use `justify-self` and `align-self` at the grid item level.

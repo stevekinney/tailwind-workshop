@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Outline from '$lib/components/outline.svelte';
 	import { title } from '$metadata';
 
 	import '../app.css';

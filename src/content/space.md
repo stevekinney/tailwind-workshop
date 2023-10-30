@@ -44,7 +44,7 @@ Now, let's add some spacing. This is a super useful tool for just quickly adding
 - **Lists of Items**: It's ideal for use cases where you have a horizontal or vertical list of items and you want equal spacing between them.
 - **Row/Column Layouts**: Use it in combination with the `flex` or `flex-col` classes to quickly create row or column layouts with even spacing between elements.
 
-## Trade-offs
+## Trade Offs and Other Things to Consider
 
 - **Fixed Spacing**: Since it provides a fixed space, it may not be ideal for all responsive designs.
 - **Not for Outer Margins**: The `space-` utilities don't affect the spacing on the outer edges of the first and last elements in the flex container.

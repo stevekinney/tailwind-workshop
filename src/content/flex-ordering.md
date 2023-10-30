@@ -16,7 +16,7 @@ Flex Ordering in Tailwind CSS allows you to control the order in which flex item
 - **Order Ascending**: Useful for dynamically re-arranging items based on user actions or other conditions without changing the HTML structure.
 - **Order Descending**: Similar to ascending but allows you to place certain elements at the beginning of the layout. This is less commonly used but can be handy for specific use-cases.
 
-## Trade-offs
+## Trade Offs and Other Things to Consider
 
 1. **Accessibility**: Changing the visual order might make it hard for screen readers to correctly interpret the page if the logical order is different from the visual order.
 2. **Readability**: Having items with custom orders may make the HTML harder to follow, especially if the order numbers are not sequential or if you're using a mix of positive and negative values.

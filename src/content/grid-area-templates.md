@@ -30,6 +30,6 @@ In Tailwind, you can then place items like so:
 
 Use grid area templates when you have complex layouts that would benefit from a more semantic setup, or when the position of grid items needs to change based on different screen sizes or other conditions.
 
-## Trade-offs
+## Trade Offs and Other Things to Consider
 
 One trade-off of using named grid areas is that it makes your grid layout dependent on the external CSS where you define the grid template areas. This might slightly deviate from the utility-first approach of Tailwind.

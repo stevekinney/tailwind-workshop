@@ -19,6 +19,6 @@ In Tailwind CSS, the `grid-auto-flow` CSS property controls how auto-placed item
 - Use `grid-flow-col` when you want grid items to populate columns first and move to the next row only when the current row is full.
 - The "dense" options are useful when you have items of varying size and want to maximize space utilization. However, this can cause items to appear out of order.
 
-## Trade-offs
+## Trade Offs and Other Things to Consider
 
 - While the "dense" options can lead to a more compact layout, they can disrupt the visual order of your items, which might not always be what you want.

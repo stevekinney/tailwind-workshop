@@ -11,7 +11,7 @@ The `justify-content` property in Flexbox is used to align Flex Items along the 
 - **What it Does**: The `justify-content` property determines how Flex Items are spaced along the main axis inside a Flex Container. It deals with the distribution of free space when the items do not consume all the available space in the container.
 - **How to Use in Tailwind**: Tailwind provides a set of utility classes to set the `justify-content` property easily. Some of the commonly used classes are `justify-start`, `justify-center`, `justify-end`, `justify-between`, `justify-around`, and `justify-evenly`.
 - **When to Use**: Use `justify-content` when you want to control the horizontal alignment and spacing of Flex Items in a row layout, or vertical alignment and spacing in a column layout. For instance, you can use it to center items, distribute them evenly across the container, or push them to opposite ends.
-- **Trade-offs**: The `justify-content` property will affect all items in the Flex Container uniformly according to the chosen alignment method. If you need to individually align items along the main axis, `justify-content` alone won't suffice; you may need to use margins or other layout techniques for more granular control.
+- **Trade Offs and Other Things to Consider**: The `justify-content` property will affect all items in the Flex Container uniformly according to the chosen alignment method. If you need to individually align items along the main axis, `justify-content` alone won't suffice; you may need to use margins or other layout techniques for more granular control.
 
 ## Summary
 

@@ -20,7 +20,7 @@ See also: [nested-flexbox-versus-grid](./nested-flexbox-versus-grid.md)
 - **Reusable Components**: When a flex item is itself a reusable component that also uses flex layout.
 - **Grid Simulation**: When you need a more complex layout that a single flex container can't easily achieve.
 
-## Trade-Offs
+## Trade Offs and Other Things to Consider
 
 1. **Complexity**: The more deeply you nest flex containers, the more difficult your CSS might become to understand and maintain.
 2. **Performance**: While most modern browsers handle nested flex containers well, extreme nesting might cause performance issues.
