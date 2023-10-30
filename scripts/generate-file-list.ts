@@ -8,7 +8,7 @@ try {
 	const fileNames: string[] = [];
 
 	for (const file of files) {
-		if ((await stat(path.join(directoryPath, file))).isFile()) {
+		if ((await stat(path.join(directoryPath, file))).isFile() && file.endsWith('.md')) {
 			fileNames.push(file);
 		}
 	}

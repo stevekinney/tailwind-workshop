@@ -156,6 +156,7 @@
   },
   "active": "d2858b023273930a",
   "lastOpenFiles": [
+    "node_modules/@types",
     "vite.config.ts.timestamp-1698614092520-988e588c6ef91.mjs",
     "src/routes/playgrounds/+layout.svelte",
     "src/routes/playgrounds/grid/box.svelte",
@@ -166,7 +167,6 @@
     "src/routes/playgrounds/grid/grid-item-classes.ts",
     "src/routes/playgrounds/grid/grid-classes.ts",
     "src/routes/playgrounds/reset.svelte",
-    "src/routes/playgrounds/range.svelte",
     "src/content/why-plugins.md",
     "src/content/form-state.md",
     "src/content/styling-an-alert.md",
