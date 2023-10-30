@@ -6,7 +6,7 @@ title: Nested Flexbox
 
 In the context of Tailwind CSS, you can create nested Flexbox layouts by adding Flexbox utility classes to child elements within a flex container. Here's how it works:
 
-See also: [[nested-flexbox-versus-grid]]
+See also: [nested-flexbox-versus-grid](./nested-flexbox-versus-grid.md)
 
 ## Core Concepts
 
@@ -25,5 +25,3 @@ See also: [[nested-flexbox-versus-grid]]
 1. **Complexity**: The more deeply you nest flex containers, the more difficult your CSS might become to understand and maintain.
 2. **Performance**: While most modern browsers handle nested flex containers well, extreme nesting might cause performance issues.
 3. **Overhead**: Each nested flex container has its own layout calculations, which might not be as efficient as a single flex or grid layout for certain designs.
-
-Understanding how to properly nest flex containers can enable you to create more complex layouts without resorting to floats or positioning, but it's essential to balance the complexity and performance implications.

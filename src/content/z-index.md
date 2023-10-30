@@ -23,5 +23,3 @@ In CSS, creating a new stacking context involves setting a `z-index` value other
 ## Tailwind's Approach
 
 Tailwind encourages a utility-first approach, which can actually make managing `z-index` simpler because you add z-index classes directly to the elements where they're needed. This can make it easier to see and understand the stacking context directly in the markup, rather than having to dig through separate CSS files.
-
-Understanding how `z-index` and stacking contexts work can help you manage the visual hierarchy of your elements effectively, particularly in complex layouts and components.

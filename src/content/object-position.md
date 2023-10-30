@@ -43,5 +43,3 @@ These `object-position` utilities are most effective when used in conjunction wi
 ```
 
 Here, `object-cover` ensures that the image covers the entire container while maintaining its aspect ratio. `object-center` then centers the image within that space.
-
-Understanding `object-position` allows you to fine-tune how media content fits and aligns within their containers, making your layouts more precise and visually appealing.

@@ -19,5 +19,3 @@ Creating a new stacking context with `isolation: isolate;` affects how the `z-in
 
 - When you have overlapping elements and want to control their stacking order locally within a component, rather than globally.
 - When you want to ensure that the stacking context of a particular section doesn't affect or get affected by other sections in the layout.
-
-By applying the `.isolate` utility class, you can manage `z-index` more predictably within a confined scope, making it easier to build and maintain complex UIs.

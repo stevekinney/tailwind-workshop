@@ -33,5 +33,3 @@ Use grid area templates when you have complex layouts that would benefit from a 
 ## Trade-offs
 
 One trade-off of using named grid areas is that it makes your grid layout dependent on the external CSS where you define the grid template areas. This might slightly deviate from the utility-first approach of Tailwind.
-
-In summary, while Tailwind doesn't provide a direct utility to set up grid area templates, you can still use its utilities to place items into named grid areas, making it easier to manage complex grid layouts.

@@ -52,6 +52,8 @@ In this example, the `<div>` will have a white background (`bg-white`) and the t
 
 ## Best Practices
 
+Here are some best practices that you didn't ask for:
+
 - **User Preference**: Consider providing a toggle that lets users switch between dark and light modes, regardless of their system settings.
 - **Contrast**: Ensure that your dark mode color choices are accessible and high-contrast.
 - **Test**: Thoroughly test all your components and layouts in both light and dark modes to ensure readability and usability.

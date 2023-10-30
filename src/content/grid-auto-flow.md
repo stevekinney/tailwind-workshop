@@ -22,5 +22,3 @@ In Tailwind CSS, the `grid-auto-flow` CSS property controls how auto-placed item
 ## Trade-offs
 
 - While the "dense" options can lead to a more compact layout, they can disrupt the visual order of your items, which might not always be what you want.
-
-In summary, Tailwind's grid auto-flow utilities give you control over how grid items are auto-placed in scenarios where not all items are explicitly placed. This helps you manage complex layouts more effectively.

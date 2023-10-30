@@ -22,5 +22,3 @@ title: Main Axis and Cross Axis
 
 - **Main Axis**: Controls the primary layout direction in a Flex Container, influenced by the `flex-direction` property. Essential for distributing space and aligning items along the primary direction.
 - **Cross Axis**: Perpendicular to the main axis, useful for aligning items in a way that is orthogonal to the main layout direction.
-
-Both the main and cross axes are fundamental concepts in Flexbox layout, giving you the tools to align, distribute, and position elements within a Flex Container effectively.

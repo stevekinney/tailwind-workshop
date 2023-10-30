@@ -28,5 +28,3 @@ In the context of Tailwind CSS, you can control the alignment and justification 
 ## Trade-offs
 
 - These utilities set the alignment for all grid items in the grid container, making them less flexible if you want to apply different alignments to different items. In such cases, you would use `justify-self` and `align-self` utilities for more specific item-level control.
-
-To sum up, Tailwind provides utilities to adjust the alignment and justification of individual grid items along both the main and cross axes. This is particularly helpful for achieving various layouts within a grid container.

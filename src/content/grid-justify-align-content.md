@@ -32,5 +32,3 @@ In Tailwind CSS, you can control the alignment and justification of grid items a
 ## Trade-offs
 
 - When you specify these utilities, you're controlling the layout at the container level, which means that all items within the container will be affected. If you need more granular control over individual items, you would use `justify-self` and `align-self` at the grid item level.
-
-To summarize, Tailwind gives you fine-grained control over how your grid items and grid content are aligned and justified, helping you achieve complex layouts with ease.

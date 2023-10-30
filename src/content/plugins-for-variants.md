@@ -1,0 +1,3 @@
+---
+title: Plugins for Variants
+---

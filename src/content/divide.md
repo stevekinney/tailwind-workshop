@@ -36,4 +36,4 @@ You can also customize the thickness and color of the dividing borders. For exam
   </div>
 </Example>
 
-**Bonus**: You can read more about [`space` versus `divide`](./space-versus-divide.md).
+**Bonus Content**: You can read more about [`space` versus `divide`](./space-versus-divide.md).

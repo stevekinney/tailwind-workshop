@@ -30,5 +30,3 @@ Use the gap utility when you need consistent space between child elements in a F
 ## Trade-Offs
 
 Using `gap` is straightforward and clean, but be aware that older browsers might not support it, especially in Flexbox layouts. Also, using `gap` with Flexbox might not yield the same results across all browsers, so testing is essential.
-
-In summary, the `gap` utility in Tailwind offers a convenient way to control spacing between rows and columns in both Flexbox and Grid layouts. It's a more maintainable solution when compared to individually setting margins or paddings on child elements.

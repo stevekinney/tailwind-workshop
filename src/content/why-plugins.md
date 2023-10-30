@@ -45,5 +45,3 @@ If your project has particular performance constraints, a custom plugin can be o
 ## Project Scalability
 
 As your project grows, managing custom utilities and components can become challenging. A plugin can serve as a centralized location for these customizations, making the codebase easier to manage as it scales.
-
-Creating a Tailwind plugin allows you to tap into Tailwind's powerful configuration and generation engine, providing a seamless way to extend the framework's capabilities according to your specific needs.

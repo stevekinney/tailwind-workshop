@@ -21,5 +21,3 @@ Flex Ordering in Tailwind CSS allows you to control the order in which flex item
 1. **Accessibility**: Changing the visual order might make it hard for screen readers to correctly interpret the page if the logical order is different from the visual order.
 2. **Readability**: Having items with custom orders may make the HTML harder to follow, especially if the order numbers are not sequential or if you're using a mix of positive and negative values.
 3. **Maintenance**: If items are often dynamically reordered, keeping track of ordering numbers can become complex and prone to errors.
-
-Flex Ordering can be a powerful feature when you need to rearrange items without touching the HTML, but it does come with its own set of challenges that require careful consideration.

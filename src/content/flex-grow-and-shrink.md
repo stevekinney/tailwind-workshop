@@ -49,9 +49,7 @@ Example in Tailwind:
 - **Flex Grow**: By allowing an item to grow, you may end up with unevenly sized items if not managed correctly. It's also possible to lose control over an item's width.
 - **Flex Shrink**: Allowing an item to shrink may make the content inside it unreadable or cause layout issues. You lose a certain amount of control over the item's size when it's allowed to shrink.
 
-To summarize:
+## To Summarize
 
 - **Flex Grow**: Enables a Flex Item to grow and fill available space within the Flex Container.
 - **Flex Shrink**: Allows a Flex Item to shrink when there isn't enough space in the Flex Container.
-
-Both properties give you control over how Flex Items behave in a dynamic layout, but they require careful planning to ensure your layout behaves as expected.

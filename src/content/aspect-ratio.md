@@ -44,5 +44,3 @@ Embedding a responsive YouTube video can be challenging due to the `iframe` requ
 ```
 
 This class automatically applies a 16:9 aspect ratio, commonly used for YouTube videos. For other ratios, you can use arbitrary values like `aspect-[3/2]`.
-
-With these Tailwind utilities, shaping images and creating responsive designs is easier than ever. Future chapters will explore arbitrary values and other advanced features.

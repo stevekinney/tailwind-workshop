@@ -39,5 +39,3 @@ You can also control the position of the object within the container using `obje
 - Use `object-fill` cautiously, as it can distort the content.
 - Use `object-none` if you want the image to ignore the size of the container.
 - Use `object-scale-down` if you want the image to fit within the container but not scale up if it's smaller.
-
-Understanding `object-fit` can help you handle media content effectively in responsive designs.

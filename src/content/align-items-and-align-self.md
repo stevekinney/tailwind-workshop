@@ -24,5 +24,3 @@ The properties `align-items` and `align-self` in Flexbox control the alignment o
 
 - **Align Items**: Controls the alignment of all Flex Items along the cross-axis as a group. Useful for global alignment within the container.
 - **Align Self**: Overrides `align-items` for individual Flex Items, giving you more granular control over their alignment.
-
-Both `align-items` and `align-self` offer distinct levels of control over your Flexbox layout in Tailwind. By understanding the capabilities and trade-offs of each, you can better dictate how your layout behaves.

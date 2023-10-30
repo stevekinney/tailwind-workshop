@@ -24,5 +24,3 @@ The properties `flex-wrap` and `flex-nowrap` control how Flex Items wrap inside 
 
 - **Flex Wrap**: Allows Flex Items to wrap onto multiple lines in a Flex Container. Useful for dynamic or responsive layouts.
 - **Flex No-Wrap**: Keeps all Flex Items on a single line, potentially causing overflow issues.
-
-By choosing between these two options, you can control how the flex items behave when they reach the edge of their container. Each has its own use-cases and potential issues, so choosing the right one is crucial for achieving the layout you desire.
