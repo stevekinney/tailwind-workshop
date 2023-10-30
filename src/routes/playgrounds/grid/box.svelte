@@ -7,6 +7,9 @@
 
 	export let id: number;
 
+	let open = false;
+	const toggle = () => (open = !open);
+
 	let columnSpan = queryParam(`box-${id}-columnSpan`);
 	let rowSpan = queryParam(`box-${id}-rowSpan`);
 	let order = queryParam(`box-${id}-order`);
@@ -16,23 +19,29 @@
 	id="box-{id}"
 	class={clsx(
 		'@container/select',
-		'flex items-center justify-center gap-4',
+		'gap-4',
 		'relative',
-		'select-none rounded-md border-2 border-fuchsia-500 bg-fuchsia-400 shadow-md',
+		'min-h-48 w-48',
+		'rounded-md border-2 border-fuchsia-500 bg-fuchsia-400 shadow-md',
 		$columnSpan,
 		$rowSpan,
 		$order
 	)}
+	on:contextmenu|preventDefault={toggle}
+	role="button"
+	tabindex={id}
 >
-	<div class="absolute left-0 top-0 p-2 font-bold text-fuchsia-900">{id}</div>
-	<div class="@xs:flex-row flex flex-col gap-4">
-		<Select
-			id="columnSpan"
-			title="Column Span"
-			bind:value={$columnSpan}
-			options={classes.columnSpan}
-		/>
-		<Select id="rowSpan" title="Row Span" bind:value={$rowSpan} options={classes.rowSpan} />
-		<Select id="order" title="Order" bind:value={$order} options={classes.order} />
-	</div>
+	<div class="p-2 text-center font-bold text-fuchsia-900" contenteditable>{id}</div>
+	{#if open}
+		<div class="flex min-w-fit flex-col gap-4 @xs:flex-row">
+			<Select
+				id="columnSpan"
+				title="Column Span"
+				bind:value={$columnSpan}
+				options={classes.columnSpan}
+			/>
+			<Select id="rowSpan" title="Row Span" bind:value={$rowSpan} options={classes.rowSpan} />
+			<Select id="order" title="Order" bind:value={$order} options={classes.order} />
+		</div>
+	{/if}
 </div>
