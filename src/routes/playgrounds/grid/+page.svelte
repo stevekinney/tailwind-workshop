@@ -9,7 +9,6 @@
 	import Range from '../range.svelte';
 	import Reset from '../reset.svelte';
 
-	import '../playground.css';
 	import { title } from '$lib/metadata';
 
 	let boxes = queryParam('boxes', {
