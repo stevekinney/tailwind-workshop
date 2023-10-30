@@ -1,8 +1,15 @@
 ---
-title: Tools
+title: Introduction
 ---
 
-# Tools
+# Course Introduction
+
+## Playgrounds
+
+- [Flex Playground](/playgrounds/flex)
+- [Grid Playground](/playgrounds/grid)
+
+## Tools
 
 Let's take a look at some of the tools that we'll be using today. All of these are options, but if you want to get a head start, you can install them before we get started.
 
