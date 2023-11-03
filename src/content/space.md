@@ -53,7 +53,7 @@ Here is an example horizontal spacing.
 
 <Playground id="UnYUh6shMy" title="Spacing Exercise" />
 
-<Playground id="dw9o6BHYZq" title="Spacing Solution" />
+<Playground id="dw9o6BHYZq" title="Spacing Solution" solution />
 
 ## When to Use
 

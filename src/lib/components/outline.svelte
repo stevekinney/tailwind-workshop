@@ -46,6 +46,7 @@
 		<Link href="/place-items">Place Items</Link>
 		<Link href="/grid-area-templates">Grid Area Templates</Link>
 		<Link href="/grid-auto-flow">Grid Auto Flow</Link>
+		<Link href="/grid-challenge">Grid Challenge</Link>
 	</Section>
 	<Section title="Plugins">
 		<Link href="/why-plugins">Why Plugins?</Link>
