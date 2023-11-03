@@ -37,3 +37,58 @@ export const gridAutoFlow = [
 export const gridAutoColumns = ['auto-cols-auto', 'auto-cols-min', 'auto-cols-max', 'auto-cols-fr'];
 
 export const gridAutoRows = ['auto-rows-auto', 'auto-rows-min', 'auto-rows-max', 'auto-rows-fr'];
+
+export const justifyContent = [
+	'justify-start',
+	'justify-end',
+	'justify-center',
+	'justify-between',
+	'justify-around',
+	'justify-evenly',
+	'justify-stretch'
+];
+
+export const justifyItems = [
+	'justify-items-start',
+	'justify-items-end',
+	'justify-items-center',
+	'justify-items-stretch'
+];
+
+export const alignContent = [
+	'content-start',
+	'content-end',
+	'content-center',
+	'content-between',
+	'content-around',
+	'content-evenly',
+	'content-baseline',
+	'content-stretch'
+];
+
+export const alignItems = [
+	'items-start',
+	'items-end',
+	'items-center',
+	'items-baseline',
+	'items-stretch'
+];
+
+export const placeContent = [
+	'place-content-start',
+	'place-content-end',
+	'place-content-center',
+	'place-content-between',
+	'place-content-around',
+	'place-content-evenly',
+	'place-content-baseline',
+	'place-content-stretch'
+];
+
+export const placeItems = [
+	'place-items-start',
+	'place-items-end',
+	'place-items-center',
+	'place-items-baseline',
+	'place-items-stretch'
+];

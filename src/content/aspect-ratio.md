@@ -4,7 +4,19 @@ title: Image Aspect Ratio and Cropping with Tailwind CSS
 
 # Image Aspect Ratio and Cropping with Tailwind CSS
 
+<script>
+  import { Example } from '$components';
+</script>
+
 Need to shape an image into a square or circle on your webpage? You don't need to crop your images manually. Tailwind CSS offers utility classes that allow you to fit images into specific aspect ratios while maintaining their original proportions.
+
+<Example>
+	<img src="https://placekitten.com/400/600" class="aspect-square object-cover w-40" />
+</Example>
+
+<Example>
+	<img src="https://placekitten.com/800/400" class="aspect-square rounded-full object-cover w-40" />
+</Example>
 
 ## Square and Circular Images
 

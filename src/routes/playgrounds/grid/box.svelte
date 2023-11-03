@@ -4,6 +4,7 @@
 	import Select from '../select.svelte';
 
 	import { queryParam } from 'sveltekit-search-params';
+	import { clickoutside } from '$lib/utilities/click-outside';
 
 	export let id: number;
 
@@ -13,27 +14,25 @@
 	let columnSpan = queryParam(`box-${id}-columnSpan`);
 	let rowSpan = queryParam(`box-${id}-rowSpan`);
 	let order = queryParam(`box-${id}-order`);
+
+	let justifySelf = queryParam(`box-${id}-justifySelf`);
+	let alignSelf = queryParam(`box-${id}-alignSelf`);
+	let placeSelf = queryParam(`box-${id}-placeSelf`);
+
+	let className: string | null = '';
+	export { className as class };
 </script>
 
 <div
 	id="box-{id}"
-	class={clsx(
-		'@container/select',
-		'gap-4',
-		'relative',
-		'min-h-48 w-48',
-		'rounded-md border-2 border-fuchsia-500 bg-fuchsia-400 shadow-md',
-		$columnSpan,
-		$rowSpan,
-		$order
-	)}
+	class={clsx('box', $columnSpan, $rowSpan, $order, className)}
 	on:contextmenu|preventDefault={toggle}
 	role="button"
 	tabindex={id}
 >
-	<div class="p-2 text-center font-bold text-fuchsia-900" contenteditable>{id}</div>
+	<div class="box-label">{id}</div>
 	{#if open}
-		<div class="flex min-w-fit flex-col gap-4 @xs:flex-row">
+		<div class="box-options" use:clickoutside={toggle}>
 			<Select
 				id="columnSpan"
 				title="Column Span"
@@ -42,6 +41,24 @@
 			/>
 			<Select id="rowSpan" title="Row Span" bind:value={$rowSpan} options={classes.rowSpan} />
 			<Select id="order" title="Order" bind:value={$order} options={classes.order} />
+			<Select
+				id="justifySelf"
+				title="Justify Self"
+				bind:value={$justifySelf}
+				options={classes.justifySelf}
+			/>
+			<Select
+				id="alignSelf"
+				title="Align Self"
+				bind:value={$alignSelf}
+				options={classes.alignSelf}
+			/>
+			<Select
+				id="placeSelf"
+				title="Place Self"
+				bind:value={$placeSelf}
+				options={classes.placeSelf}
+			/>
 		</div>
 	{/if}
 </div>

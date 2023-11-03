@@ -4,6 +4,38 @@ title: Grid
 
 # Grid
 
+<script lang="ts">
+  import { Playground } from '$components';
+</script>
+
+Via the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Box_alignment_in_grid_layout):
+
+![Block Axis](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Box_alignment_in_grid_layout/block_axis.png)
+
+![Inline Axis](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Box_alignment_in_grid_layout/7_inline_axis.png)
+
+<div class="grid grid-cols-2 gap-x-2 gap-y-4 my-8">
+  <div class="rounded bg-slate-50 border-2 border-slate-100 bg-gradient-to-r from-cyan-500 to-pink-500 bg-clip-text text-transparent font-bold text-3xl p-8">Justify</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 text-2xl p-8">Inline Axis</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 bg-gradient-to-r from-cyan-500 to-pink-500 bg-clip-text text-transparent font-bold text-3xl p-8">Align</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 text-2xl p-8">Block Axis</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 bg-gradient-to-r from-cyan-500 to-pink-500 bg-clip-text text-transparent font-bold text-3xl p-8">Place</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 text-2xl p-8">Both Axes</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 bg-gradient-to-r from-cyan-500 to-pink-500 bg-clip-text text-transparent font-bold text-3xl p-8">Content</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 text-2xl p-8">The Grid Itself</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 bg-gradient-to-r from-cyan-500 to-pink-500 bg-clip-text text-transparent font-bold text-3xl p-8">Items</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 text-2xl p-8">Each Grid Item</div>
+</div>
+
+See if you can lay this out in a grid.
+
+- At the smallest viewport, it should be a one-column grid.
+- At the largest it should be a one row, grid.
+
+Use the **Grid Playground** to try out your ideas.
+
+<Playground id="TZ8hb0wpQ1" title="A Grid Exercise" />
+
 ## Basic Grid Container
 
 To establish a grid container in Tailwind, you can use the `grid` class. This sets `display: grid;` on the element, turning its direct children into grid items.

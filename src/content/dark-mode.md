@@ -4,7 +4,15 @@ title: Dark Mode
 
 # Dark Mode
 
+<script lang="ts">
+  import { Playground } from '$components';
+</script>
+
 Enabling dark mode in a Tailwind CSS project involves a few steps. Let's get into it.
+
+The core functionality lives in the `dark:` variant.
+
+<Playground id="NiNQ2fLHdh" title="Dark Mode" height={500} />
 
 ## Configuration
 
@@ -17,6 +25,8 @@ module.exports = {
 	// rest of the config
 };
 ```
+
+<Playground id="gdW0Ci0QIE" title="Setting Dark Mode with a Class" height={500} />
 
 Here, `class` means you'll be using a specific CSS class to toggle dark mode. Alternatively, if you set `media`, Tailwind will use the `prefers-color-scheme` media query to automatically set the theme based on the user's system settings.
 

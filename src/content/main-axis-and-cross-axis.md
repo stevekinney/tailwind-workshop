@@ -17,8 +17,3 @@ title: Main Axis and Cross Axis
 - **How to Use in Tailwind**: You usually deal with the cross axis when you use classes like `items-center`, `items-start`, or `items-end`, which control how items align along the cross axis.
 - **When to Use**: Use the cross-axis controls when you want to align items in the direction that is perpendicular to your main axis. For instance, if your flex direction is a row and you want to center items vertically, you're operating on the cross axis.
 - **Trade Offs and Other Things to Consider**: Just like the main axis, aligning items along the cross axis will affect all the Flex Items in the container unless you specify otherwise. For individual control, you might have to use additional classes like `self-start` or `self-end`.
-
-## Summary
-
-- **Main Axis**: Controls the primary layout direction in a Flex Container, influenced by the `flex-direction` property. Essential for distributing space and aligning items along the primary direction.
-- **Cross Axis**: Perpendicular to the main axis, useful for aligning items in a way that is orthogonal to the main layout direction.

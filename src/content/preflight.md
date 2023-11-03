@@ -19,13 +19,13 @@ Preflight is where you set up your base styles in Tailwind. It's build on top of
 As you can see, Tailwind's base styles are pretty aggressive. Consider this markup:
 
 ```html
-<div class="container mx-auto mt-6">
+<div>
 	<button>I am a button.</button>
 	<input placeholder="Input placeholder." />
 </div>
 ```
 
-<Playground id="RRGHmikiuW" title="Tailwind's Base Styling for a Button and an Input" />
+<Playground id="cgJYCp8LoL" title="Tailwind's Base Styling for a Button and an Input" />
 
 ## Extending Tailwind's Base Styles
 

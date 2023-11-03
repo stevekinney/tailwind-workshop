@@ -39,9 +39,7 @@ Example:
 
 The components layer comes next and is where you define common design patterns as reusable components, typically by applying utility classes with Tailwind's `@apply` directive. These components are higher in specificity compared to base styles but lower than utility classes.
 
-Components are often expressed in your CSS files using the `@layer components {}` directive.
-
-Example:
+Components are often expressed in your CSS files using the `@layer components {}` directive. Here is an example:
 
 ```css
 @layer components {
@@ -58,14 +56,13 @@ Example:
 
 The utilities layer is where Tailwind's utility classes are generated. These are highly specific, single-purpose classes that do one thing (like setting margin, padding, text alignment, etc.). This layer is intended to be the highest specificity layer, effectively overriding any conflicting styles from the previous layers.
 
-You generally do not modify the utilities layer directly, as Tailwind automatically generates it based on your configuration.
-
-Example of utility classes:
+You generally do not modify the utilities layer directly, as Tailwind automatically generates it based on your configuration. Here is an example of some utility classes:
 
 ```css
 .mt-4 {
 	margin-top: 1rem;
 }
+
 .text-center {
 	text-align: center;
 }

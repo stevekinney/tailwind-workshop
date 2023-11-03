@@ -4,6 +4,60 @@ title: Justify Content
 
 # Justify Content
 
+- `justifu-start` is the default for Flexbox.
+- `justify-stretch` is the default for CSS grid.
+
+<script lang="ts">
+  import { Example } from '$components';
+  import { justifyContent as flex } from '../routes/playgrounds/flex/flex-classes.ts';
+  import { justifyContent as grid } from '../routes/playgrounds/grid/grid-classes.ts';
+  import Select from '../routes/playgrounds/select.svelte';
+  
+  const highlight = 'justify-';
+
+  let flexSelected = 'justify-start';
+  let gridSelected = 'justify-stretch';
+</script>
+
+<div class="space-y-4 mb-6">
+  <Select
+    id="flex"
+    title="Flex"
+    bind:value={flexSelected}
+    options={flex}
+    required
+  />
+
+  <Example highlight={highlight}>
+    <div class="flex {flexSelected} gap-4 text-white text-sm  bg-cyan-100 p-4 rounded-md">
+      <div class="w-14 h-14 rounded-md flex items-center justify-center bg-fuchsia-500 shadow-lg">01</div>
+      <div class="w-14 h-14 rounded-md flex items-center justify-center bg-fuchsia-500 shadow-lg">02</div>
+      <div class="w-14 h-14 rounded-md flex items-center justify-center bg-fuchsia-500 shadow-lg">03</div>
+    </div>
+  </Example>
+</div>
+
+<div class="space-y-4">
+  <Select
+    id="Grid"
+    title="Justify Content"
+    bind:value={gridSelected}
+    options={grid}
+    required
+  />
+
+  <Example highlight={highlight}>
+    <div class="grid {gridSelected} grid-flow-col gap-4 text-white text-sm  bg-cyan-100 p-4 rounded-md">
+      <div class="px-2 h-14 rounded-md flex items-center justify-center bg-fuchsia-500 shadow-lg">01</div>
+      <div class="px-2 h-14 rounded-md flex items-center justify-center bg-fuchsia-500 shadow-lg">02</div>
+      <div class="px-2 h-14 rounded-md flex items-center justify-center bg-fuchsia-500 shadow-lg">03</div>
+      <div class="px-2 h-14 rounded-md flex items-center justify-center bg-fuchsia-500 shadow-lg">04</div>
+      <div class="px-2 h-14 rounded-md flex items-center justify-center bg-fuchsia-500 shadow-lg">05</div>
+      <div class="px-2 h-14 rounded-md flex items-center justify-center bg-fuchsia-500 shadow-lg">06</div>
+    </div>
+  </Example>
+</div>
+
 The `justify-content` property in Flexbox is used to align Flex Items along the main-axis of the Flex Container. Here's how it works in the context of Tailwind CSS:
 
 ## Justify Content (`justify-content`)

@@ -6,6 +6,21 @@ title: Using @apply
 
 **Short Version**: `@apply` let's you compose [utility classes](./utility-first.md).
 
+```css
+h1 {
+	@apply mb-6 text-2xl;
+}
+```
+
+You could also accomplish the same thing using something like this:
+
+```css
+h1 {
+	margin-bottom: theme(space.6);
+	font-size: theme(fontSize.2xl);
+}
+```
+
 It's useful when you've got a third-party library, that is expecting certain classes. (I'm looking at you, [Select2](https://select2.org/)) _and_ you want to use Tailwind.
 
 I'm not here to fight about this, so I'll just leave [this tweet from Tailwind's creator, Adam Wathan](https://twitter.com/adamwathan/status/1226511611592085504?lang=en), here:

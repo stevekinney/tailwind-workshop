@@ -35,3 +35,5 @@ export const gap = [
 	'gap-80',
 	'gap-96'
 ];
+
+export const width = ['w-10', 'w-20', 'w-40', 'w-60', 'w-80', 'w-full'];

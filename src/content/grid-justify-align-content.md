@@ -15,15 +15,6 @@ In Tailwind CSS, you can control the alignment and justification of grid items a
 - `justify-around`: Distributes the grid items evenly along the main axis, with equal spacing around each item.
 - `justify-evenly`: Distributes the grid items evenly along the main axis, with equal spacing between each item, including the first and last ones.
 
-## Grid Align Content Utilities
-
-- `content-start`: Aligns the grid's content at the start of the grid container along the cross axis (opposite to your main axis).
-- `content-center`: Centers the grid's content along the cross axis.
-- `content-end`: Aligns the grid's content at the end of the grid container along the cross axis.
-- `content-between`: Distributes the grid's content evenly along the cross axis, with the first row/column at the start and the last row/column at the end.
-- `content-around`: Distributes the grid's content evenly along the cross axis, with equal spacing around each row/column.
-- `content-evenly`: Distributes the grid's content evenly along the cross axis, with equal spacing between each row/column, including the first and last ones.
-
 ## When to Use Each
 
 - Use `justify-*` utilities to control the distribution of items along the main axis, which could be either rows or columns.

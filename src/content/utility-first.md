@@ -8,7 +8,7 @@ title: Utility-First CSS
 
 # Utility-First CSS
 
-Utility-first CSS is a methodology for writing CSS that prioritizes the use of utility classes to construct a user interface. Unlike traditional CSS approaches, where you define styles for semantic classes or IDs, utility-first CSS focuses on applying low-level utility classes directly to HTML elements. These utility classes are small, single-purpose classes that do one thing well, such as setting the margin, padding, text alignment, or color.
+Utility-first CSS is a methodology for writing CSS that prioritizes the use of utility classes to build a user interface. Unlike traditional CSS approaches, where you define styles for semantic classes or IDs, utility-first CSS focuses on applying low-level utility classes directly to HTML elements. These utility classes are small, single-purpose classes that do one thing well, such as setting the margin, padding, text alignment, or color.
 
 In Tailwind, that's going to look something like this:
 

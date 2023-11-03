@@ -71,3 +71,28 @@ export const rowSpan = [
 	'row-end-7',
 	'row-end-auto'
 ];
+
+export const justifySelf = [
+	'justify-self-auto',
+	'justify-self-start',
+	'justify-self-end',
+	'justify-self-center',
+	'justify-self-stretch'
+];
+
+export const alignSelf = [
+	'self-auto',
+	'self-start',
+	'self-end',
+	'self-center',
+	'self-stretch',
+	'self-baseline'
+];
+
+export const placeSelf = [
+	'place-self-auto',
+	'place-self-start',
+	'place-self-end',
+	'place-self-center',
+	'place-self-stretch'
+];

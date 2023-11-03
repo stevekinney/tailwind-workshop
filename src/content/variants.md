@@ -37,3 +37,9 @@ We call also change the styling when the button is disabled.
 <Example highlight="disabled:opacity-50">
   <button disabled class="bg-blue-500 border-2 border-blue-600 text-white px-2 py-1 rounded shadow-md hover:bg-blue-400 active:bg-blue-600 active:border-blue-700 disabled:opacity-50">Button</button>
 </Example>
+
+You can even stack the variants.
+
+<Example highlight="disabled:hover:bg-blue-500">
+  <button disabled class="bg-blue-500 border-2 border-blue-600 text-white px-2 py-1 rounded shadow-md hover:bg-blue-400 active:bg-blue-600 active:border-blue-700 disabled:opacity-50 disabled:hover:bg-blue-500">Button</button>
+</Example>

@@ -4,7 +4,41 @@ title: Flex
 
 # Flex
 
+<script lang="ts">
+  import { Playground } from '$components';
+</script>
+
 Flexbox is a layout model in CSS that's designed to distribute space along a single axis, either horizontally or vertically. It's incredibly useful for building complex layout structures with a more predictable way than traditional models, especially when the sizes of your items are unknown or dynamic.
+
+<div class="not-prose relative flex items-center w-full aspect-square bg-slate-50 border-slate-100 border-2">
+  <p class="absolute bg-gradient-to-r pl-10 text-white font-bold from-pink-400 to-pink-600 rotate-90 w-full">Cross Axis (Align)</p>
+  <p class=" bg-gradient-to-r pl-10 text-white font-bold from-cyan-400 to-cyan-600 w-full">Main Axis (Justify)</p>
+</div>
+
+<div class="grid grid-cols-2 gap-x-2 gap-y-4 my-8">
+  <div class="rounded bg-slate-50 border-2 border-slate-100 bg-gradient-to-r from-cyan-500 to-pink-500 bg-clip-text text-transparent font-bold text-3xl p-8">Justify</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 text-2xl p-8">Main Axis</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 bg-gradient-to-r from-cyan-500 to-pink-500 bg-clip-text text-transparent font-bold text-3xl p-8">Align</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 text-2xl p-8">Cross Axis</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 bg-gradient-to-r from-cyan-500 to-pink-500 bg-clip-text text-transparent font-bold text-3xl p-8">Place</div>
+  <div class="rounded bg-slate-50 border-2 border-slate-100 text-2xl p-8">Both Axes</div>
+</div>
+
+- **Main Axis**: Controls the primary layout direction in a Flex Container, influenced by the `flex-direction` property. Essential for distributing space and aligning items along the primary direction.
+- **Cross Axis**: Perpendicular to the main axis, useful for aligning items in a way that is orthogonal to the main layout direction.
+
+## Exercise
+
+Take a look at these quotes and try the following:
+
+- Lay them out in a row layout.
+- Lay them out in a column layout.
+- Add a breakpoint that lays them out in a column in smaller screens and then wraps them for larger screens.
+- Add an appropriate gap.
+
+We'll explore it together in a few minutes.
+
+<Playground id="R5aRaZBARh" title="A Flexbox Challenge" height={500} />
 
 ## Enabling Flexbox
 

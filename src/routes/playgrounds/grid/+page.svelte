@@ -29,6 +29,18 @@
 	let gridAutoColumns = queryParam('gridAutoColumns');
 	let gridAutoRows = queryParam('gridAutoRows');
 	let gap = queryParam('gap');
+	let justifyContent = queryParam('justifyContent');
+	let alignContent = queryParam('alignContent');
+	let placeContent = queryParam('placeContent');
+	let justifyItems = queryParam('justifyItems');
+	let alignItems = queryParam('alignItems');
+	let placeItems = queryParam('placeItems');
+
+	let width = queryParam('width', {
+		encode: (value: (typeof classes)['width'][number]) => value,
+		decode: (value: string | null) => value as (typeof classes)['width'][number],
+		defaultValue: 'w-20'
+	});
 </script>
 
 <svelte:head>
@@ -46,24 +58,31 @@
 			max="2000"
 			step="50"
 		/>
-		<Reset params="?boxes=9&height=600" />
+		<Select title="Box Width" id="boxWidth" bind:value={$width} options={classes.width} />
+		<Reset params="?boxes=9&height=600&width=w-20" />
 	</div>
 
 	<div
 		class={clsx(
 			'@container',
-			'grid overflow-scroll rounded-md border-2 border-teal-300 bg-teal-100 p-2 shadow-md',
+			'grid rounded-md border-2 border-teal-300 bg-teal-100 p-2 shadow-md',
 			$gridTemplateColumns,
 			$gridTemplateRows,
 			$gridAutoFlow,
 			$gridAutoColumns,
 			$gridAutoRows,
+			$justifyContent,
+			$alignContent,
+			$placeContent,
+			$justifyItems,
+			$alignItems,
+			$placeItems,
 			$gap
 		)}
 		style="height: {$containerHeight}px"
 	>
 		{#each Array($boxes) as _, id}
-			<Box {id} />
+			<Box class={$width} {id} />
 		{/each}
 	</div>
 
@@ -99,5 +118,41 @@
 			options={classes.gridAutoRows}
 		/>
 		<Select title="Gap" id="gap" bind:value={$gap} options={classes.gap} />
+		<Select
+			title="Justify Content"
+			id="justifyContent"
+			bind:value={$justifyContent}
+			options={classes.justifyContent}
+		/>
+		<Select
+			title="Align Content"
+			id="alignContent"
+			bind:value={$alignContent}
+			options={classes.alignContent}
+		/>
+		<Select
+			title="Place Content"
+			id="placeContent"
+			bind:value={$placeContent}
+			options={classes.placeContent}
+		/>
+		<Select
+			title="Justify Items"
+			id="justifyItems"
+			bind:value={$justifyItems}
+			options={classes.justifyItems}
+		/>
+		<Select
+			title="Align Items"
+			id="alignItems"
+			bind:value={$alignItems}
+			options={classes.alignItems}
+		/>
+		<Select
+			title="Place Items"
+			id="placeItems"
+			bind:value={$placeItems}
+			options={classes.placeItems}
+		/>
 	</section>
 </div>

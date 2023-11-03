@@ -32,6 +32,7 @@
 	let alignItems = queryParam('alignItems');
 	let placeItems = queryParam('placeItems');
 	let gap = queryParam('gap');
+	let width = queryParam('width');
 </script>
 
 <svelte:head>
@@ -49,13 +50,14 @@
 			max="2000"
 			step="50"
 		/>
-		<Reset params="?boxes=3&height=400" />
+		<Select title="Box Width" id="boxWidth" bind:value={$width} options={classes.width} />
+		<Reset params="?boxes=3&height=400&width=w-20" />
 	</div>
 
 	<div
 		class={clsx(
 			'@container',
-			'flex overflow-scroll rounded-md border-2 border-teal-300 bg-teal-100 p-2 shadow-md',
+			'flex rounded-md border-2 border-teal-300 bg-teal-100 p-2 shadow-md',
 			$flexDirection,
 			$flexWrap,
 			$justifyContent,
@@ -69,7 +71,7 @@
 		style="height: {$containerHeight}px"
 	>
 		{#each Array($boxes) as _, id}
-			<Box {id} />
+			<Box class={$width} {id} />
 		{/each}
 	</div>
 

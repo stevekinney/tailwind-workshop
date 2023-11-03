@@ -5,7 +5,7 @@ title: Space
 # Space
 
 <script lang="ts">
-  import { Example, Callout } from '$components';
+  import { Example, Callout, Playground } from '$components';
 </script>
 
 The `space-` utility in Tailwind CSS is used for distributing fixed space between child elements within a Flexbox container. Essentially, it's a shorthand for managing the `margin` between Flex children in a straightforward way.
@@ -21,10 +21,10 @@ Here is an example without spacing.
 
 <Example>
   <div class="bg-blue-100 px-4">
-    <div class="bg-red-500 text-center text-semibold">First</div>
-    <div class="bg-red-500 text-center text-semibold">Second</div>
-    <div class="bg-red-500 text-center text-semibold">Third</div>
-    <div class="bg-red-500 text-center text-semibold">Fourth</div>
+    <div class="bg-red-500 border-2 border-red-600 text-center text-semibold">First</div>
+    <div class="bg-red-500 border-2 border-red-600 text-center text-semibold">Second</div>
+    <div class="bg-red-500 border-2 border-red-600 text-center text-semibold">Third</div>
+    <div class="bg-red-500 border-2 border-red-600 text-center text-semibold">Fourth</div>
   </div>
 </Example>
 
@@ -32,12 +32,28 @@ Now, let's add some spacing. This is a super useful tool for just quickly adding
 
 <Example highlight="space-y-4">
   <div class="bg-blue-100 px-4 space-y-4">
-    <div class="bg-red-500 text-center text-semibold">First</div>
-    <div class="bg-red-500 text-center text-semibold">Second</div>
-    <div class="bg-red-500 text-center text-semibold">Third</div>
-    <div class="bg-red-500 text-center text-semibold">Fourth</div>
+    <div class="bg-red-500 border-red-600 border-2 text-center text-semibold">First</div>
+    <div class="bg-red-500 border-red-600 border-2 text-center text-semibold">Second</div>
+    <div class="bg-red-500 border-red-600 border-2 text-center text-semibold">Third</div>
+    <div class="bg-red-500 border-red-600 border-2 text-center text-semibold">Fourth</div>
   </div>
 </Example>
+
+Here is an example horizontal spacing.
+
+<Example highlight="space-x-8">
+  <div class="bg-blue-100 space-x-8 py-4">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded border-2 border-blue-700 shadow-md">Button</button>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded border-2 border-blue-700 shadow-md">Button</button>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded border-2 border-blue-700 shadow-md">Button</button>
+  </div>
+</Example>
+
+## Exercise
+
+<Playground id="UnYUh6shMy" title="Spacing Exercise" />
+
+<Playground id="dw9o6BHYZq" title="Spacing Solution" />
 
 ## When to Use
 
