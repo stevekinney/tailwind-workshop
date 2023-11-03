@@ -11,7 +11,7 @@ title: Space
 The `space-` utility in Tailwind CSS is used for distributing fixed space between child elements within a Flexbox container. Essentially, it's a shorthand for managing the `margin` between Flex children in a straightforward way.
 
 <Callout title="Space is Just a Shorthand">
-  <code>space</code> is really just a short-hand for adding some margins to <strong>all but the first child<strong>.
+  <code>space</code> is really just a short-hand for adding some margins to <strong>all but the last child<strong>.
 </Callout>
 
 - **Fixed Spacing**: The `space-` utility adds a fixed amount of margin between each flex item, but not on the outer edges. This eliminates the need to add individual margin classes to each flex item.
