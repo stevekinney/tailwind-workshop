@@ -11,7 +11,7 @@
 			<h1 class="font-title text-6xl font-normal">{title}</h1>
 		</a>
 		<nav
-			class="mb-6 flex justify-end gap-8 rounded-md border-2 border-slate-200 bg-slate-100 px-4 py-2 shadow-md"
+			class="mb-6 flex flex-wrap justify-end gap-2 rounded-md border-2 border-slate-200 bg-slate-100 px-4 py-2 shadow-md md:flex-row md:gap-8"
 		>
 			<a
 				href="https://frontendmasters.com/courses/tailwind-css/"
