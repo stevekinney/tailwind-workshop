@@ -16,7 +16,7 @@
 			<a
 				href="https://frontendmasters.com/courses/tailwind-css/"
 				target="_blank"
-				class="block flex-grow rounded-md border-2 border-slate-300 px-2 py-1 text-center font-bold text-black decoration-blue-400 underline-offset-4 shadow-sm transition-colors hover:bg-slate-100 hover:no-underline hover:decoration-blue-500 hover:decoration-4 active:text-blue-300"
+				class="block flex-grow rounded-md border-2 border-slate-300 px-2 py-1 text-center font-bold text-black decoration-blue-400 underline-offset-4 shadow-sm transition-all hover:-translate-y-px hover:bg-slate-200 hover:text-black hover:no-underline hover:decoration-blue-500 hover:decoration-4 hover:shadow-md active:text-blue-900"
 				>Watch this course on Frontend Masters</a
 			>
 			<a
