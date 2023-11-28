@@ -10,7 +10,7 @@ title: Styling an Alert
 
 Alright, let's take everything we've looked at so far and see if we can pull it together into making a little alert or modal or whatever you deem worthy to call it. We'll improve on this as we go along, but—for starters—this is what we're going for.
 
-Your starting point can be found [here](https://play.tailwindcss.com/nEPZbko25R).
+Your starting point can be found [here](https://play.tailwindcss.com/QBodHAvVBk).
 
 ```html
 <div>
